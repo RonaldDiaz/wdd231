@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ronald Diaz Zerpa">
+    <meta name="description" content="Index of my WDD231 course. It demonstrates the required knowledge of HTML, CSS and JavaScript to design and develop my course's home page.">
+    <title>WDD 231 - Web Frontend Development I | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/r3d-logo.svg" alt="Site logo" width="66" height="72">
+            <span>Ronald Diaz</span>
+        </div>        
+        <button type="button" id="menu" aria-label="Main Menu" aria-expanded="false"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="content-container">
+            <section class="card">
+                <h2 class="card-title">About Me</h2>
+                <div class="card-content">
+                    <p>My name is Ronald, the eldest of four siblings. I live in Maracaibo with my wife and my six-year-old son. I work as an analyst, collecting and analyzing local business data to support decision-making. I love listening to music, watching sci-fi movies and TV series, and learning about almost everything.<br><br>
+                    
+                    I started my programming journey during the COVID-19 pandemic by watching videos, reading tutorials, and taking free online courses. At the time, my main interest was Android app development, so I learned a great deal about Java and Kotlin.<br><br>
+                    
+                    Now, by studying Software Development at BYU-Idaho, God has given me the opportunity to formalize, strengthen, and expand the knowledge I have gained on my own. I hope to use these skills to better serve my family and my community.<br><br>
+                    
+                    At my current job, I am already applying many of the concepts I have learned in this program to build better tools for collecting, analyzing, and visualizing field data.
+                    For example, in my CSE 111 and WDD 131 projects, I developed tools to help small entrepreneurs calculate their costs. This is one of the aspects of my job that I enjoy the most because it gives me the opportunity to help people.<br><br>
+                    
+                    I am truly excited about the future. There is still so much to learn, and I can't wait to see the amazing solutions we will be creating in the years ahead!
+                        
+                    </p>
+                </div>                
+            </section>
+            <section class="card">
+                <h2 class="card-title">Student Photo</h2>
+                <div class="card-content">
+                    <img class="profile-picture" src="images/profile-image.jpg" alt="Ronald Diaz and his wife, enjoying a sunny day in the park." loading="lazy">
+                </div>
+            </section>
+            <section class="card certificates">
+                <h2 class="card-title">Web Certificate Courses</h2>
+                <div class="card-content courses">
+                    <div class="courses-filters">
+                        <button type="button" id="all" class="active">All</button>
+                        <button type="button" id="cse">CSE</button>
+                        <button type="button" id="wdd">WDD</button>
+                    </div>
+                    <ul class="courses-container" id="courses">
+                        <li>WDD 130</li>
+                        <li>WDD 131</li>
+                        <li>WDD 231</li>
+                    </ul>
+                    <p>The total credits for the courses listed above is <span id="credits"></span></p>
+                    <p id="creditsDetails"></p>
+                </div>
+            </section>
+        </div>        
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/RonaldDiaz/" target="_blank"><img src="images/github-logo.svg" alt="GitHub" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg" alt="LinkedIn" width="16"
+                    height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.svg" alt="Instagram" width="16"
+                    height="16"></a>
+        </div>
+        <div class="date">
+            <p>&copy; <span id="currentYear"></span> Ronald Diaz Zerpa - ☀️ Maracaibo, Venezuela ☀️</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>    
+</body>
+</html>

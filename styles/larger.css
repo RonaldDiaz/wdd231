@@ -1,0 +1,49 @@
+:root {
+    --accent-color: #FF9800;
+}
+
+@media screen and (min-width: 650px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: var(--accent-color);
+        transition: all 0.2s ease;
+        transform: translateX(-50%);
+    }
+
+    nav a:hover::after {
+        color: var(--light-primary);
+        width: 100%;
+    }
+
+    .profile-picture {
+        width: 350px;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .courses-container li {
+        flex: 1 1 30%;
+    }
+}
