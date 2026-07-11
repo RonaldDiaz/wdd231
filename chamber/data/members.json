@@ -1,0 +1,128 @@
+[
+  {
+    "companyName": "Umbrella Corporation",
+    "companyAddress": {
+      "street": "Avenida 4 (Bella Vista), Esquina Calle 72",
+      "sector": "Bella Vista",
+      "parish": "Olegario Villalobos",
+      "municipality": "Maracaibo"
+    },
+    "companyPhoneNumber": "(58) 261-7001122",
+    "companyMail": "contact@umbrella.com",
+    "companyWebsiteUrl": "https://umbrella-zulia.com",
+    "image": "umbrella-logo.webp",
+    "membershipLevel": 3,
+    "otherInformation": {
+      "employees": 1450,
+      "productiveSector": "Biotechnology & Pharmaceutics"
+    }
+  },
+  {
+    "companyName": "ACME Corporation",
+    "companyAddress": {
+      "street": "Calle 171 con Avenida 48",
+      "sector": "Zona Industrial El Bajo",
+      "parish": "El Bajo",
+      "municipality": "San Francisco"
+    },
+    "companyPhoneNumber": "(58) 261-7003344",
+    "companyMail": "anvil@acme.com",
+    "companyWebsiteUrl": "https://acme-venezuela.com",
+    "image": "acme-logo.webp",
+    "membershipLevel": 1,
+    "otherInformation": {
+      "employees": 320,
+      "productiveSector": "Machinery and Explosives Manufacturing"
+    }
+  },
+  {
+    "companyName": "Aperture Science",
+    "companyAddress": {
+      "street": "Avenida Intercomunal, Sector Las Morochas",
+      "sector": "Las Morochas",
+      "parish": "Alonso de Ojeda",
+      "municipality": "Lagunillas"
+    },
+    "companyPhoneNumber": "(58) 265-6005566",
+    "companyMail": "join_us@aperture.com",
+    "companyWebsiteUrl": "https://aperture-curtains.com",
+    "image": "aperture-logo.webp",
+    "membershipLevel": 3,
+    "otherInformation": {
+      "employees": 850,
+      "productiveSector": "Salt, asbestos and curtains"
+    }
+  },
+  {
+    "companyName": "Cyberdyne Systems",
+    "companyAddress": {
+      "street": "Avenida 5 de Julio, Centro Comercial de Sol",
+      "sector": "Paraíso",
+      "parish": "Chiquinquirá",
+      "municipality": "Maracaibo"
+    },
+    "companyPhoneNumber": "(58) 261-7007788",
+    "companyMail": "illbeback@cyberdyne.net",
+    "companyWebsiteUrl": "https://cyberdyne-ve.net",
+    "image": "cyberdyne-systems-logo.webp",
+    "membershipLevel": 2,
+    "otherInformation": {
+      "employees": 120,
+      "productiveSector": "Artificial Intelligence and Robotics"
+    }
+  },
+  {
+    "companyName": "Wayne Enterprises",
+    "companyAddress": {
+      "street": "Carretera H, Esquina Avenida 32",
+      "sector": "Miraflores",
+      "parish": "Carmen Herrera",
+      "municipality": "Cabimas"
+    },
+    "companyPhoneNumber": "(58) 264-4009900",
+    "companyMail": "soserious@wayne.tech",
+    "companyWebsiteUrl": "https://wayne-zulia.org",
+    "image": "wayne-logo.webp",
+    "membershipLevel": 3,
+    "otherInformation": {
+      "employees": 2100,
+      "productiveSector": "Financial and Aerospace Investments"
+    }
+  },
+  {
+    "companyName": "Buy n Large",
+    "companyAddress": {
+      "street": "Prolongación Circunvalación 2, Frente a Plaza de Toros",
+      "sector": "Cujicito",
+      "parish": "Idelfonso Vásquez",
+      "municipality": "Maracaibo"
+    },
+    "companyPhoneNumber": "(58) 261-7001133",
+    "companyMail": "sales@bnl.com",
+    "companyWebsiteUrl": "https://bnl-mercosur.com",
+    "image": "bnl-logo.webp",
+    "membershipLevel": 2,
+    "otherInformation": {
+      "employees": 4300,
+      "productiveSector": "Consumer Goods and Logistics"
+    }
+  },
+  {
+    "companyName": "Vault Tec",
+    "companyAddress": {
+      "street": "Avenida Principal de Tía Juana",
+      "sector": "Taparo",
+      "parish": "Manuel Manrique",
+      "municipality": "Simón Bolívar"
+    },
+    "companyPhoneNumber": "(58) 265-6002244",
+    "companyMail": "warneverchanges@vaultec.com",
+    "companyWebsiteUrl": "https://vault-tec.com",
+    "image": "vault-tec-logo.webp",
+    "membershipLevel": 1,
+    "otherInformation": {
+      "employees": 550,
+      "productiveSector": "Technology and Real Estate Development"
+    }
+  }
+]

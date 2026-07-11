@@ -1,0 +1,333 @@
+:root {
+    --color-primary: #0B2545;
+    --color-secondary: #134074;
+    --color-accent: #EEB902;
+    --color-bg: #F4F7F6;
+    --color-white: #FFFFFF;
+    --color-text: #1D2A44;
+    --shadow: rgba(0, 0, 0, 0.1);
+    
+    --font-headings: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    --max-width: 1200px;
+    --transition: all 0.3s ease;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items:flex-end;
+    gap: 0.75rem;
+}
+
+.logo {
+    height: 3rem;
+    width: auto;
+}
+
+.site-name {
+    font-family: var(--font-headings);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    line-height: 2rem;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--color-accent);
+    line-height: 1rem;
+    margin-top: 0.3rem;
+}
+
+.menu-button {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 900;
+	border: 0;
+	background: none;
+	color: var(--color-white);
+    padding: 0.75rem;
+}
+
+.menu-button::before {
+	content: "☰";
+}
+
+.menu-button.open::before {
+	content: "✕";
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-secondary);
+}
+
+nav.open {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul a {
+    font-family: var(--font-headings);
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    position: relative;
+    display: block;
+}
+
+nav ul li.current a {
+    color: var(--color-accent);
+    border-radius: 32px;
+}
+
+nav ul li a:hover {
+    color: var(--color-accent);
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1, h2 {
+    font-family: var(--font-headings);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.display-method {
+    display: inline-flex;
+    gap: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--shadow);
+    margin-bottom: 1rem;
+}
+
+.btn-view {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.btn-view.active {
+  background-color: var(--color-white);
+  border-radius: 8px;
+}
+
+.members-container.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    place-items: center;
+}
+
+.members-container.grid-view .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-white);
+    border: 1px solid var(--shadow);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.members-container.grid-view .company-tagline {
+    text-align: center;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--shadow);
+}
+
+.members-container.grid-view .card-body {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.members-container.grid-view .card img {
+    padding: 1rem;
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1;
+    object-fit:contain;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px var(--shadow);
+    margin-top: auto;
+}
+
+.members-container.grid-view .company-info {
+    flex: 1;
+}
+
+.members-container.grid-view .company-info p {
+    margin: 0.25rem 0;
+    font-size: 0.8rem;
+    overflow-wrap: anywhere;
+}
+
+.members-container.list-view {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--shadow);
+    border-radius: 8px;
+}
+
+.members-container.list-view .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 1rem;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--shadow);
+}
+
+.members-container.list-view .card img {
+    display: none;
+}
+
+.members-container.list-view .card .company-tagline {
+    display: none;
+}
+
+.members-container.list-view .card-body,
+.members-container.list-view .company-info {
+  display: contents;
+}
+
+.members-container.list-view .card:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.members-container.list-view .card:last-child {
+  border-bottom: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.members-container.list-view .card:nth-child(even) {
+    background-color: var(--color-bg);
+}
+
+.members-container.list-view .card h2,
+.members-container.list-view .card p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.members-container.list-view .company-info p {
+    overflow-wrap: anywhere;
+}
+
+footer {
+    background-color: var(--color-primary);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.site-info {
+    color: var(--color-white);
+    text-align: left;
+}
+
+.site-info p:first-of-type {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+.social img {
+    width: 44px;
+    height: auto;
+}
+
+.date {
+    color: var(--color-white);
+    text-align: left;
+}
+
+.date p:first-of-type {
+    color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.date p:last-of-type {
+    color: var(--color-accent);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        background-color: transparent;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: var(--color-accent);
+        transition: var(--transition);
+        transform: translateX(-50%);
+    }
+
+    nav a:hover::after {
+        width: 100%;
+    }
+
+    .footer-container {
+        max-width: var(--max-width);
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 0 auto;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}

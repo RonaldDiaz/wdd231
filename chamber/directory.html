@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maracaibo Chamber of Commerce | Business Directory</title>
+    <meta name="author" content="Ronald Diaz Zerpa">
+    <meta name="description" content="List of local business and other organizations that belong to Maracaibo Chamber of Commerce.">
+    <link rel="icon" href="images/chamber-logo.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Maracaibo Chamber of Commerce | Business Directory">
+    <meta property="og:description"
+        content="List of local business and other organizations that belong to Maracaibo Chamber of Commerce.">
+    <meta property="og:url" content="https://ronalddiaz.github.io/wdd231/chamber/directory">
+    <meta property="og:image" content="https://ronalddiaz.github.io/wdd231/chamber/images/og-directory.webp">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img class="logo" src="images/chamber-logo.svg" alt="Maracaibo Chamber of Commerce logo">
+                <div class="site-name">
+                    <p>Maracaibo</p>
+                    <p class="subtitle">Chamber of Commerce</p>
+                </div>
+            </div>
+            <button type="button" class="menu-button" id="menuBtn" aria-label="Main menu" aria-expanded="false"></button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li class="current"><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="members">
+            <h1>Directory</h1>
+            <div class="display-method">
+                <button id="btn-grid" class="btn-view active"><img src="images/grid-icon.svg" alt="Display members as a grid icon"></button>
+                <button id="btn-list" class="btn-view"><img src="images/list-icon.svg" alt="Display members as a list icon"></button>
+            </div>
+            <div class="members-container grid-view" id="membersContainer"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="site-info">
+                <p><strong>Maracaibo Chamber of Commerce</strong></p>
+                <p>77 Street 5 de Julio</p>
+                <p>Maracaibo, Venezuela</p>
+                <p>info@maracaibo.com.ve</p>
+                <p>(58) 261-5551234</p>
+                <p></p>
+            </div>
+            <div class="social">
+                <a href="https://github.com/RonaldDiaz/" target="_blank"><img src="images/github-logo.svg" alt="GitHub logo"
+                        width="16" height="16"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg" alt="LinkedIn logo"
+                        width="16" height="16"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.svg" alt="Instagram logo"
+                        width="16" height="16"></a>
+            </div>
+            <div class="date">
+                <p>WDD231 Class Project</p>
+                <p>Ronald Diaz Zerpa</p>
+                <p>&copy; <span id="currentYear"></span>  - Maracaibo Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
