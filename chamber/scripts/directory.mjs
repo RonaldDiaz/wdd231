@@ -1,3 +1,10 @@
+import { setDates } from "./date.mjs";
+import { getMembersData } from "./members.mjs";
+import { setNavigation } from "./navigation.mjs";
+
+setNavigation();
+setDates();
+
 const membersContainer = document.querySelector("#membersContainer");
 const btnGrid = document.getElementById('btn-grid');
 const btnList = document.getElementById('btn-list');
@@ -16,24 +23,18 @@ btnList.addEventListener("click", () => {
     membersContainer.classList.add("list-view");
 })
 
-const url = "data/members.json";
-getMembersData();
-
-async function getMembersData() {
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        displayMembers(data);
-    } catch (error) {
-        console.error("Error fetching data:", error);
-    }    
+async function initDirectory() {
+  const members = await getMembersData();
+  displayMembers(members);
 }
+
+initDirectory();
 
 const displayMembers = (members) => {
     const fragment = document.createDocumentFragment();
     members.forEach(member => {
         let card = document.createElement("section");
-        card.setAttribute("class", "card");
+        card.setAttribute("class", "member-card");
 
         let companyName = document.createElement("h2");
         companyName.textContent = `${member.companyName}`;

@@ -14,7 +14,8 @@
     "membershipLevel": 3,
     "otherInformation": {
       "employees": 1450,
-      "productiveSector": "Biotechnology & Pharmaceutics"
+      "productiveSector": "Biotechnology & Pharmaceutics",
+      "spotlight": "From Maracaibo to the world, shaping human health. Our local bio-labs are safer than walking through Las Pulgas at midnight."
     }
   },
   {
@@ -32,7 +33,8 @@
     "membershipLevel": 1,
     "otherInformation": {
       "employees": 320,
-      "productiveSector": "Machinery and Explosives Manufacturing"
+      "productiveSector": "Machinery and Explosives Manufacturing",
+      "spotlight": "Manufacturing top-tier explosives and machinery. Guaranteed to help you catch any roadrunner, even under the intense Maracaibo heat!"
     }
   },
   {
@@ -50,7 +52,8 @@
     "membershipLevel": 3,
     "otherInformation": {
       "employees": 850,
-      "productiveSector": "Salt, asbestos and curtains"
+      "productiveSector": "Salt, asbestos and curtains",
+      "spotlight": "Pioneering the future of curtains and asbestos. We’re opening portals to new dimensions, and trying to fix the local power grid."
     }
   },
   {
@@ -68,7 +71,8 @@
     "membershipLevel": 2,
     "otherInformation": {
       "employees": 120,
-      "productiveSector": "Artificial Intelligence and Robotics"
+      "productiveSector": "Artificial Intelligence and Robotics",
+      "spotlight": "Revolutionizing robotics and AI. Our advanced neural networks are almost as smart and fast-talking as a true native Maracucho."
     }
   },
   {
@@ -86,7 +90,8 @@
     "membershipLevel": 3,
     "otherInformation": {
       "employees": 2100,
-      "productiveSector": "Financial and Aerospace Investments"
+      "productiveSector": "Financial and Military Investments",
+      "spotlight": "Strategic financial investments for a safer tomorrow. Because even dark knights need a reliable partner in the local business community."
     }
   },
   {
@@ -104,7 +109,8 @@
     "membershipLevel": 2,
     "otherInformation": {
       "employees": 4300,
-      "productiveSector": "Consumer Goods and Logistics"
+      "productiveSector": "Consumer Goods and Logistics",
+      "spotlight": "Your one-stop shop for everything you need. From delicious patacones to rechargable fans, making life easier for every family."
     }
   },
   {
@@ -122,7 +128,8 @@
     "membershipLevel": 1,
     "otherInformation": {
       "employees": 550,
-      "productiveSector": "Technology and Real Estate Development"
+      "productiveSector": "Technology and Real Estate Development",
+      "spotlight": "Building high-tech real estate and modern underground solutions. Perfect shelters to keep you perfectly cool during the midday sun."
     }
   }
 ]

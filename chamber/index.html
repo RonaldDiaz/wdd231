@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maracaibo Chamber of Commerce | Empowering Local Businesses</title>
+    <meta name="author" content="Ronald Diaz Zerpa">
+    <meta name="description"
+        content="Boost your business with the Maracaibo Chamber of Commerce. Network at local events, check Maracaibo weather, and join our thriving member spotlight.">
+    <link rel="icon" href="images/chamber-logo.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/main.mjs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Maracaibo Chamber of Commerce | Empowering Local Businesses">
+    <meta property="og:description"
+        content="Boost your business with the Maracaibo Chamber of Commerce. Network at local events, check Maracaibo weather, and join our thriving member spotlight.">
+    <meta property="og:url" content="https://ronalddiaz.github.io/wdd231/chamber/index">
+    <meta property="og:image" content="https://ronalddiaz.github.io/wdd231/chamber/images/og-index.webp">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img class="logo" src="images/chamber-logo.svg" alt="Maracaibo Chamber of Commerce logo">
+                <div class="site-name">
+                    <p>Maracaibo</p>
+                    <p class="subtitle">Chamber of Commerce</p>
+                </div>
+            </div>
+            <button type="button" class="menu-button" id="menuBtn" aria-label="Main menu" aria-expanded="false"></button>
+            <nav id="mainNav">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/maracaibo-hero.webp" alt="Maracaibo city name art, located in Paseo del Lago's Park.">
+            <div class="hero-content">
+                <h1>Empowering Local Businesses to Grow and Succeed</h1>
+                <p>We connect local enterprises, foster strategic networking, and advocate for the economic growth of the Maracaibo community.</p>
+                <a href="join.html" class="cta-button">Join the Chamber Today</a>
+            </div>
+        </section>
+        <div class="main-content">
+            <div class="panel">
+                <section class="info-section card">
+                    <h2>Supporting Local Enterprise</h2>
+                    <p>The Maracaibo Chamber of Commerce is an organization dedicated to strengthening the industrial, technological, and commercial capabilities of our Zulia region. Through ongoing training, business matchmaking events, and networking projects, we transform ideas into stable economic pillars.</p>
+                </section>
+                <section class="spotlight-section card">
+                    <h2>Distinguished Members</h2>
+                    <div class="spotlight-grid" id="spotlightGrid"></div>
+                </section>
+            </div>
+            <div class="panel">
+                <section class="weather card">
+                    <h2>Weather Information</h2>
+                    <div class="weather-info" id="weatherInfo"></div>
+                </section>
+                <section class="events card">
+                    <h2>Next Events</h2>
+                    <ul>
+                        <li>
+                            <strong>July 25:</strong> Costs and Finances practical workshop for small business.
+                        </li>
+                        <li>
+                            <strong>August 02:</strong> Opening Ceremony of Expo-Zulia Digital 2026.
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="site-info">
+                <p><strong>Maracaibo Chamber of Commerce</strong></p>
+                <p>77 Street 5 de Julio</p>
+                <p>Maracaibo, Venezuela</p>
+                <p>info@maracaibo.com.ve</p>
+                <p>(58) 261-5551234</p>
+                <p></p>
+            </div>
+            <div class="social">
+                <a href="https://github.com/RonaldDiaz/" target="_blank"><img src="images/github-logo.svg" alt="GitHub logo"
+                        width="16" height="16"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg" alt="LinkedIn logo"
+                        width="16" height="16"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.svg"
+                        alt="Instagram logo" width="16" height="16"></a>
+            </div>
+            <div class="date">
+                <p>WDD231 Class Project</p>
+                <p>Ronald Diaz Zerpa</p>
+                <p>&copy; <span id="currentYear"></span> - Maracaibo Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
