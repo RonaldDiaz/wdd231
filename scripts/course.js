@@ -109,9 +109,19 @@ wddButton.addEventListener("click", () => {
 })
 
 function showCourses(filteredCourses) {
-    coursesContainer.innerHTML = filteredCourses.map(course => `
-        <li class="${course.completed ? "completed" : ""}">${course.subject} ${course.number}</li>
-    `).join("");
+    coursesContainer.innerHTML = "";
+    filteredCourses.forEach(course => {
+        let courseItem = document.createElement("li");
+        courseItem.setAttribute("class", `${course.completed ? "completed" : ""}`)
+        courseItem.textContent = `${course.subject} ${course.number}`;
+        courseItem.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+        coursesContainer.appendChild(courseItem);
+    });
+    // coursesContainer.innerHTML = filteredCourses.map(course => `
+    //     <li class="${course.completed ? "completed" : ""}">${course.subject} ${course.number}</li>
+    // `).join("");
     const totalCredits = filteredCourses.reduce((total, course) => total + course.credits, 0);
     const completedCredits = filteredCourses.reduce((total, course) => total + (course.completed ? course.credits : 0), 0);
     const pendingCredits = totalCredits - completedCredits;
@@ -119,4 +129,24 @@ function showCourses(filteredCourses) {
     const completedMessage = pendingCredits === 0 ? "Congratulations! You have completed all the credits needed!" : `You have completed <strong>${completedCredits}</strong> credits. `
     const pendingMessage = pendingCredits === 0 ? "" : `You still need <strong>${pendingCredits}</strong> credits to finish.`
     creditsDetails.innerHTML = `${completedMessage} ${pendingMessage}`
+}
+
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+    
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
 }

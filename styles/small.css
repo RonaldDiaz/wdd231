@@ -213,6 +213,11 @@ h1 {
     flex: 1 1 100%;
     background: var(--uncompleted-course);
     list-style: none;
+    cursor: pointer;
+}
+
+.courses-container li:hover, .courses-container li.completed:hover {
+    background: var(--accent-color);
 }
 
 .courses-container li.completed {
@@ -222,6 +227,29 @@ h1 {
 .courses-container li.completed::before {
   content: "✓ ";
   color: var(--completed-symbol-color);
+}
+
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
 }
 
 .social {
