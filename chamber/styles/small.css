@@ -5,7 +5,10 @@
     --color-bg: #F4F7F6;
     --color-white: #FFFFFF;
     --color-text: #1D2A44;
+    --color-bronze: #CD7F32;
+    --color-silver:#C0C0C0;
     --shadow: rgba(0, 0, 0, 0.1);
+    --blue-shadow: rgba(11, 37, 69, 0.7);
     --divider: rgba(255, 255, 255, 0.15);
     
     --font-headings: 'Poppins', sans-serif;
@@ -103,7 +106,7 @@ nav {
 
 nav.open {
     display: block;
-    animation: fadeIn 0.3s ease;
+    animation: verticalFadeIn 0.3s ease;
 }
 
 nav ul {
@@ -580,7 +583,185 @@ footer p {
     color: var(--color-accent);
 }
 
-@keyframes fadeIn {
+.join-main {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.join-title {
+    font-size: 1.6rem;
+}
+
+form label {
+    display: block;
+    margin-top: 1.2rem;
+    font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--shadow);
+    border-radius: 4px;
+}
+
+form input:required,
+form select:required {
+    border-left: 5px solid var(--color-accent);
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid var(--color-secondary);
+}
+
+.submit-btn {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: var(--font-headings);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    box-shadow: 0 4px 12px var(--shadow);
+    transform: translateY(-2px);
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.membership-card {
+    border-left: 8px solid var(--color-secondary);
+    animation: horizontalFadeIn 0.8s ease-out backwards;
+}
+
+.membership-card:nth-child(1) { animation-delay: 0.1s; }
+.membership-card:nth-child(2) { animation-delay: 0.3s; border-left-color: var(--color-bronze);}
+.membership-card:nth-child(3) { animation-delay: 0.5s; border-left-color: var(--color-silver); }
+.membership-card:nth-child(4) { animation-delay: 0.7s; border-left-color: var(--color-accent); }
+
+.membership-card h2 {
+    font-size: 1.2rem;
+}
+
+.open-modal-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.open-modal-btn:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+dialog {
+    margin: auto;
+    padding: 2rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px var(--shadow);
+    max-width: 90%;
+    width: 400px;
+    background-color: var(--color-bg);
+}
+
+dialog::backdrop {
+    background-color: var(--blue-shadow);
+}
+
+dialog h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-accent);
+}
+
+dialog ul {
+    margin: 1rem 0 2rem 1.5rem;
+}
+
+.close-modal-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.thankyou-main {
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+.thankyou-card {
+    text-align: center;
+}
+
+.thankyou-card h1 {
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.results-box {
+    background-color: var(--color-bg);
+    border: 1px solid var(--shadow);
+    border-left: 6px solid var(--color-accent);
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 500px;
+    box-shadow: 0 6px 15px var(--shadow);
+}
+
+.results-box p {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--shadow);
+    padding-bottom: 0.5rem;
+}
+
+.results-box p:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.results-box strong {
+    color: var(--color-primary);
+    display: inline-block;
+    width: 150px;
+}
+
+@keyframes verticalFadeIn {
     from {
         opacity: 0;
         transform: translateY(10px);
@@ -589,5 +770,17 @@ footer p {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes horizontalFadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateX(30px); 
+    }
+
+    to { 
+        opacity: 1; 
+        transform: translateX(0); 
     }
 }

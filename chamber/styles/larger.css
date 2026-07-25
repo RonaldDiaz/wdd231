@@ -61,4 +61,9 @@
     .social {
         justify-content: center;
     }
+
+    .join-main {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
 }

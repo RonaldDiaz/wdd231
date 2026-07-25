@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Maracaibo Chamber of Commerce</title>
+    <meta name="author" content="Ronald Diaz Zerpa">
+    <meta name="description"
+        content="Apply to join the Maracaibo Chamber of Commerce. Discover our membership levels and start networking today.">
+    <link rel="icon" href="images/chamber-logo.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/join.mjs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Join the Maracaibo Chamber of Commerce">
+    <meta property="og:description"
+        content="Apply to join the Maracaibo Chamber of Commerce. Discover our membership levels and start networking today.">
+    <meta property="og:url" content="https://ronalddiaz.github.io/wdd231/chamber/join">
+    <meta property="og:image" content="https://ronalddiaz.github.io/wdd231/chamber/images/og-join.webp">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img class="logo" src="images/chamber-logo.svg" alt="Maracaibo Chamber of Commerce logo">
+                <div class="site-name">
+                    <p>Maracaibo</p>
+                    <p class="subtitle">Chamber of Commerce</p>
+                </div>
+            </div>
+            <button type="button" class="menu-button" id="menuBtn" aria-label="Main menu"
+                aria-expanded="false"></button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li class="current"><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="join-main">
+        <section class="form-container card">
+            <h1 class="join-title">Join the Chamber Today</h1>
+            <form method="get" action="thankyou.html">
+                <label>First Name:
+                    <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name"
+                        required>
+                </label>
+                <label>Last Name:
+                    <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name"
+                        required>
+                </label>
+                <label>Organizational Title:
+                    <input type="text" name="org_title"
+                        title="Enter your organizational title within your organization. Must contain only letters, hyphens, and spaces. Minimum 7 characters."
+                        autocomplete="organization-title" pattern="^[a-zA-Z\s\-]{7,}$">
+                </label>
+                <label>Email Address:
+                    <input type="email" name="email" title="Enter a valid email address" autocomplete="email"
+                        placeholder="example@business.com" required>
+                </label>
+                <label>Mobile Phone:
+                    <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+                </label>
+                <label>Business/Organization Name:
+                    <input type="text" name="organization" title="Enter your business name" autocomplete="organization"
+                        required>
+                </label>
+                <label>Membership Level:
+                    <select name="membership_level" title="Select your desired membership level" required>
+                        <option value="" disabled selected>Select a level...</option>
+                        <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Business Description:
+                    <textarea name="description" title="Provide a brief description of your organization"
+                        rows="4"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <button type="submit" class="submit-btn">Join the Chamber Now</button>
+            </form>
+        </section>
+        <section class="cards-container">
+            <div class="membership-card card np-card">
+                <h2>Non-Profit</h2>
+                <p>For qualifying non-profit organizations.</p>
+                <button class="open-modal-btn" data-modal="modal-np">View Benefits</button>
+            </div>
+            <div class="membership-card card bronze-card">
+                <h2>Bronze Level</h2>
+                <p>Essential benefits for small local businesses.</p>
+                <button class="open-modal-btn" data-modal="modal-bronze">View Benefits</button>
+            </div>
+            <div class="membership-card card silver-card">
+                <h2>Silver Level</h2>
+                <p>Advanced networking and directory features.</p>
+                <button class="open-modal-btn" data-modal="modal-silver">View Benefits</button>
+            </div>
+            <div class="membership-card card gold-card">
+                <h2>Gold Level</h2>
+                <p>Maximum visibility and executive privileges.</p>
+                <button class="open-modal-btn" data-modal="modal-gold">View Benefits</button>
+            </div>
+        </section>
+    </main>
+    <dialog id="modal-np">
+        <div class="dialog-content">
+            <h2>Non-Profit Benefits</h2>
+            <ul>
+                <li>Free membership</li>
+                <li>Basic directory listing</li>
+                <li>Access to monthly community newsletters</li>
+            </ul>
+            <button class="close-modal-btn">Close</button>
+        </div>
+    </dialog>
+    <dialog id="modal-bronze">
+        <div class="dialog-content">
+            <h2>Bronze Benefits</h2>
+            <ul>
+                <li>Standard directory listing</li>
+                <li>Discounts on Chamber luncheons</li>
+                <li>Access to small business training sessions</li>
+            </ul>
+            <button class="close-modal-btn">Close</button>
+        </div>
+    </dialog>
+    <dialog id="modal-silver">
+        <div class="dialog-content">
+            <h2>Silver Benefits</h2>
+            <ul>
+                <li>Priority directory listing</li>
+                <li>2 Free event tickets per year</li>
+                <li>Social media highlight work</li>
+                <li>Home page spotlight positions</li>
+            </ul>
+            <button class="close-modal-btn">Close</button>
+        </div>
+    </dialog>
+    <dialog id="modal-gold">
+        <div class="dialog-content">
+            <h2>Gold Benefits</h2>
+            <ul>
+                <li>Home page spotlight positions</li>
+                <li>Executive networking luncheons</li>
+                <li>Annual event sponsorships included</li>
+                <li>Dedicated advertising space</li>
+            </ul>
+            <button class="close-modal-btn">Close</button>
+        </div>
+    </dialog>
+    <footer>
+        <div class="footer-container">
+            <div class="site-info">
+                <p><strong>Maracaibo Chamber of Commerce</strong></p>
+                <p>77 Street 5 de Julio</p>
+                <p>Maracaibo, Venezuela</p>
+                <p>info@maracaibo.com.ve</p>
+                <p>(58) 261-5551234</p>
+            </div>
+            <div class="social">
+                <a href="https://github.com/RonaldDiaz/" target="_blank"><img src="images/github-logo.svg" alt="GitHub logo"
+                        width="16" height="16"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg" alt="LinkedIn logo"
+                        width="16" height="16"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.svg" alt="Instagram logo"
+                        width="16" height="16"></a>
+            </div>
+            <div class="date">
+                <p>WDD231 Class Project</p>
+                <p>Ronald Diaz Zerpa</p>
+                <p>&copy; <span id="currentYear"></span> - Maracaibo Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
