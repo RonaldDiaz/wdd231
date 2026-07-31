@@ -14,9 +14,9 @@
     --transition: all 0.3s ease;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 *, *::before, *::after {
     box-sizing: border-box;
