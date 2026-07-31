@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready 3D | Site Plan</title>
+    <meta name="author" content="Ronald Diaz Zerpa">
+    <meta name="description"
+        content="Detailed and comprehensive planning document outlining the design principles, color scheme, typography, and wireframes for the Ready 3D custom fabrication digital storefront.">
+    <link rel="icon" href="images/r3d-logo.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/main.mjs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Ready 3D | Site Plan">
+    <meta property="og:description"
+        content="Detailed and comprehensive planning document outlining the design principles, color scheme, typography, and wireframes for the Ready 3D custom fabrication digital storefront.">
+    <meta property="og:url" content="https://ronalddiaz.github.io/wdd231/project/siteplan">
+    <meta property="og:image" content="https://ronalddiaz.github.io/wdd231/project/images/og-siteplan.webp">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo-container">
+                <img class="logo" src="images/r3d-logo.svg" alt="Ready 3D logo">
+                <p class="site-name">Ready <span class="subtitle">3D</span></p>
+            </a>
+            <button type="button" class="menu-button" id="menuBtn" aria-label="Main menu"
+                aria-expanded="false"></button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a class="nav-link" href="#overview">Overview</a></li>
+                    <li><a class="nav-link" href="#design">Design</a></li>
+                    <li><a class="nav-link" href="#wireframes">Wireframes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp" alt="A 3D Printer, finishing a engineering piece." width="1000" height="500">
+            <div class="hero-content">
+                <h1>Ready 3D Site Plan</h1>
+                <p>Detailed and comprehensive planning document outlining the design principles, color scheme, typography, and wireframes for the Ready 3D custom fabrication digital storefront.</p>
+                <div class="buttons-container">
+                    <a href="#" class="primary-button">Example Primary Button</a>
+                    <a href="#" class="secondary-button">Example Secondary Button</a>
+                </div>
+                
+            </div>
+        </section>
+        <div class="main-content">
+            <section id="overview" class="card">
+                <div class="section-header">
+                    <span>01</span>
+                    <h2>Overview</h2>
+                </div>
+                <div class="section-content">
+                    <h3>Site Name</h3>
+                    <p>The name of the site is <strong>Ready <span>3D</span></strong>. This name represents the agility and preparedness of the 3D printing service, stating that the business is ready to provide robust solutions and custom fabrication. It is coupled with a geometric cube logo to reinforce the technical nature of the brand. </p><p><strong>Domain availability:</strong> The URL https://www.3dready.com/ is available.</p>
+                    <h3>Site Purpose</h3>
+                    <p>The site is as a digital storefront and interactive catalog for Ready 3D. It is a platform to showcase 3D-printed utilities, electronic shells, templates, and molds. Also, it offers a contact process for clients to request custom modeling and specialized printing services.</p>
+                    <h3>Scenarios</h3>
+                    <p>These are the primary questions our target audience (makers, engineers, and DIY enthusiasts) will ask when visiting the site:</p>
+                    <ul>
+                        <li><strong>Scenario 1:</strong> What are the exact dimensions, materials, and technical specifications for the Arduino electronic enclosures?</li>
+                        <li><strong>Scenario 2:</strong> How can I contact the team to request a custom 3D printed prototype from my own CAD file?</li>
+                        <li><strong>Scenario 3:</strong> Are there pre-designed functional tools and baking molds available for immediate purchase in the catalog?</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="design" class="card">
+                <div class="section-header">
+                    <span>02</span>
+                    <h2>Design</h2>
+                </div>
+                <div class="section-content">
+                    <h3>Color Scheme</h3>
+                    <p>The color scheme is designed to project a modern, industrial, and technical aesthetic.</p>
+                    <div class="color-palette">
+                        <div class="color-card">
+                            <div class="color-swatch primary"></div>
+                            <div class="color-info">
+                                <h4>Primary Color</h4>
+                                <code>#262A2F</code>
+                            </div>
+                        </div>
+                        <div class="color-card">
+                            <div class="color-swatch secondary"></div>
+                            <div class="color-info">
+                                <h4>Secondary Color</h4>
+                                <code>#193659</code>
+                            </div>
+                        </div>
+                        <div class="color-card">
+                            <div class="color-swatch accent"></div>
+                            <div class="color-info">
+                                <h4>Accent Color</h4>
+                                <code>#FF9F21</code>
+                            </div>
+                        </div>
+                        <div class="color-card">
+                            <div class="color-swatch background"></div>
+                            <div class="color-info">
+                                <h4>Background Color</h4>
+                                <code>#F4F7F6</code>
+                            </div>
+                        </div>
+                        <div class="color-card">
+                            <div class="color-swatch text"></div>
+                            <div class="color-info">
+                                <h4>Text Color</h4>
+                                <code>#1D2A44</code>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Typography</h3>
+                    <p>The site will be using these fonts:</p>
+                    <div class="fonts-container">
+                        <div>
+                            <h4 class="headings-font">Montserrat, Sans-Serif (Bold/Semibold)</h4>
+                            <p>Clean font for headings, page titles and card titles.</p>
+                        </div>
+                        <div>
+                            <h4 class="body-font">Open Sans, Sans-Serif (Regular/Medium)</h4>
+                            <p>Optimal readability for body text, tables and forms.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="wireframes" class="card">
+                <div class="section-header">
+                    <span>03</span>
+                    <h2>Wireframes</h2>
+                </div>
+                <div class="section-content">
+                    <h3>Wireframes</h3>
+                    <h4>Home Page</h4>
+                    <img src="images/wireframe-home.svg" alt="Wireframe of the Home Page.">
+                    <h4>Catalog</h4>
+                    <img src="images/wireframe-catalog.svg" alt="Wireframe of the Catalog Page.">
+                    <h4>Contact</h4>
+                    <img src="images/wireframe-contact.svg" alt="Wireframe of the Contact Page.">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="site-info">
+                <p><strong>Ready 3D</strong></p>
+                <p>Maracaibo, Venezuela</p>
+                <p>info@3dready.com</p>
+                <p>(58) 261-5551234</p>
+            </div>
+            <div class="social">
+                <a href="https://github.com/RonaldDiaz/" target="_blank"><img src="images/github-logo.svg"
+                        alt="GitHub logo" width="16" height="16"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg"
+                        alt="LinkedIn logo" width="16" height="16"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.svg"
+                        alt="Instagram logo" width="16" height="16"></a>
+            </div>
+            <div class="date">
+                <p>WDD231 Class Project</p>
+                <p>Ronald Diaz Zerpa</p>
+                <p>&copy; <span id="currentYear"></span> - Ready 3D</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+                <p>Attributions page: </p>
+                <p>Video Link: </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
