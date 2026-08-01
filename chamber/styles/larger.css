@@ -67,3 +67,14 @@
         align-items: start;
     }
 }
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "vereda basilica"
+        "carabobo puente"
+        "baralt camlb"
+        "tranvia capitulacion";
+    }
+}

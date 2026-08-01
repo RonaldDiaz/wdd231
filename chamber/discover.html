@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maracaibo Chamber of Commerce | Discover Maracaibo</title>
+    <meta name="author" content="Ronald Diaz Zerpa">
+    <meta name="description"
+        content="Discover the most amazing places and activities to enjoy a visit to 'The Beloved Land of the Sun', Maracaibo!">
+    <link rel="icon" href="images/chamber-logo.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/discover.mjs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Maracaibo Chamber of Commerce | Discover Maracaibo">
+    <meta property="og:description"
+        content="Discover the most amazing places and activities to enjoy a visit to 'The Land of the Beloved Sun', Maracaibo!">
+    <meta property="og:url" content="https://ronalddiaz.github.io/wdd231/chamber/discover">
+    <meta property="og:image" content="https://ronalddiaz.github.io/wdd231/chamber/images/og-discover.webp">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img class="logo" src="images/chamber-logo.svg" alt="Maracaibo Chamber of Commerce logo">
+                <div class="site-name">
+                    <p>Maracaibo</p>
+                    <p class="subtitle">Chamber of Commerce</p>
+                </div>
+            </div>
+            <button type="button" class="menu-button" id="menuBtn" aria-label="Main menu"
+                aria-expanded="false"></button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="members">
+            <h1>Discover</h1>
+            <div class="discover-grid" id="discoverContainer"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="site-info">
+                <p><strong>Maracaibo Chamber of Commerce</strong></p>
+                <p>77 Street 5 de Julio</p>
+                <p>Maracaibo, Venezuela</p>
+                <p>info@maracaibo.com.ve</p>
+                <p>(58) 261-5551234</p>
+            </div>
+            <div class="social">
+                <a href="https://github.com/RonaldDiaz/" target="_blank"><img src="images/github-logo.svg"
+                        alt="GitHub logo" width="16" height="16"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg"
+                        alt="LinkedIn logo" width="16" height="16"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.svg"
+                        alt="Instagram logo" width="16" height="16"></a>
+            </div>
+            <div class="date">
+                <p>WDD231 Class Project</p>
+                <p>Ronald Diaz Zerpa</p>
+                <p>&copy; <span id="currentYear"></span> - Maracaibo Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+    <dialog id="infoModal" class="info-modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Location Name</h2>
+            <p id="modalAddress" class="modal-address"></p>
+            <div id="modalBody"></div>
+            <button type="button" class="close-modal-btn" id="closeModal" aria-label="Close modal">Close</button>
+        </div>
+    </dialog>
+    <div id="visitToast" class="toast-container" role="status" aria-live="polite">
+        <p id="toastMessage"></p>
+        <button type="button" id="closeToast" aria-label="Close notification">&times;</button>
+    </div>
+</body>
+</html>
