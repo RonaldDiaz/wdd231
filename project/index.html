@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready 3D | Home Page</title>
+    <meta name="author" content="Ronald Diaz Zerpa">
+    <meta name="description"
+        content="Welcome to Ready 3D, the place where you can turn your ideas into functional and high precision physical components. Learn about our fabrication process, and see the advantages of choosing us!">
+    <link rel="icon" href="images/r3d-logo.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/main.mjs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Ready 3D | Home Page">
+    <meta property="og:description"
+        content="Welcome to Ready 3D, the place where you can turn your ideas into functional and high precision physical components. Learn about our fabrication process, and see the advantages of choosing us!">
+    <meta property="og:url" content="https://ronalddiaz.github.io/wdd231/project/index">
+    <meta property="og:image" content="https://ronalddiaz.github.io/wdd231/project/images/og-index.webp">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo-container">
+                <img class="logo" src="images/r3d-logo.svg" alt="Ready 3D logo">
+                <p class="site-name">Ready <span class="subtitle">3D</span></p>
+            </a>
+            <button type="button" class="menu-button" id="menuBtn" aria-label="Main Menu" aria-expanded="false">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a class="nav-link current" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="catalog.html">Catalog</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/hero.webp" alt="A 3D Printer, finishing a engineering piece." width="1000" height="500">
+            <div class="hero-content">
+                <h1>Ready 3D: Printing Solutions</h1>
+                <p>High-durability engineering utilities, custom electronics enclosures, and specialized technical molds designed for creators and professionals.</p>
+                <div class="buttons-container">
+                    <a href="catalog.html" class="primary-button btn">Explore Our Catalog</a>
+                    <a href="contact.html" class="secondary-button btn">Request Custom Solution</a>
+                </div>
+            </div>
+        </section>
+        <div class="main-content">
+            <section class="about-overview">
+                <div class="about-grid">
+                    <div class="about-text card">
+                        <div class="card-content">
+                            <h2>Built for Engineering & Innovation</h2>
+                            <p>At <strong>Ready 3D</strong>, we turn digital CAD concepts into functional, high-precision physical components. Whether you need a single prototype enclosure for an Arduino project or a batch of custom molds, our service delivers structural reliability using industrial-grade materials.</p><br>
+                            <p>We combine additive manufacturing techniques with meticulous quality inspection to ensure exact tolerances for all technical parts.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-header">Why Choose Ready 3D?</h3>
+                        <ul class="card-content">
+                            <li class="reason-item">
+                                <img src="images/material-icon.svg" alt="Printing material icon" width="36" height="36">
+                                <p><strong>Technical Materials:</strong> PETG, ABS, TPU, and High-Temp Resins.</p>
+                            </li>
+                            <li class="reason-item">
+                                <img src="images/precision-icon.svg" alt="High precision icon" width="36" height="36">
+                                <p><strong>High Precision:</strong> Dimensional accuracy down to &plusmn;0.1mm.</p>
+                            </li>
+                            <li class="reason-item">
+                                <img src="images/cad-icon.svg" alt="Custom CAD services icon" width="36" height="36">
+                                <p><strong>Custom CAD Services:</strong> Turn your napkin sketches into 3D models.</p>
+                            </li>
+                            <li class="reason-item">
+                                <img src="images/turnaroun-icon.svg" alt="Fast turnaround icon" width="36" height="36">
+                                <p><strong>Fast Turnaround:</strong> Local production with rapid delivery options.</p>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </section>            
+            <section class="categories-section">
+                <h2>Featured Catalog Categories</h2>
+                <div class="categories-grid">
+                    <article class="category-card card">
+                        <img src="images/enclosure.webp" alt="Arduino and Raspberry Pi 3D printed cases" loading="lazy" width="300" height="200">
+                        <div class="category-content">
+                            <h3>Electronic Enclosures</h3>
+                            <p>Custom housing units designed for microcontrollers, sensors, and PCB boards with snap-fit lids and ventilation.</p>
+                            <a class="primary-button btn" href="catalog.html?category=enclosures">View Enclosures</a>
+                        </div>
+                    </article>
+            
+                    <article class="category-card card">
+                        <img src="images/mold.webp" alt="High precision 3D printed molds" loading="lazy" width="300" height="200">
+                        <div class="category-content">
+                            <h3>Technical Molds</h3>
+                            <p>Durable silicone casting forms and specialized baking molds engineered for clean release and repeated use.</p>
+                            <a class="primary-button btn" href="catalog.html?category=molds">View Molds</a>
+                        </div>
+                    </article>
+            
+                    <article class="category-card card">
+                        <img src="images/template.webp" alt="3D printed engineering utility tools" loading="lazy" width="300" height="200">
+                        <div class="category-content">
+                            <h3>Engineering Utilities</h3>
+                            <p>Functional workshop jigs, alignment templates, and replacement brackets built for high mechanical stress.</p>
+                            <a class="primary-button btn" href="catalog.html?category=utilities">View Utilities</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="process-section">
+                <h2>Custom Fabrication Process</h2>
+                <div class="process-steps">
+                    <div class="step-card card">
+                        <img src="images/design.svg" alt="Piece design icon." loading="lazy" width="280" height="200">
+                        <h3><span>1.</span>Send Your Design</h3>
+                        <p>Upload your STL/STEP file or send us a sketch with detailed dimensions.</p>
+                    </div>
+                    <div class="step-card card">
+                        <img src="images/specifications.svg" alt="Specification selection icon." loading="lazy" width="280" height="200">
+                        <h3><span>2.</span>Select Specifications</h3>
+                        <p>Choose your desired material, infill density, color, and finish preferences.</p>
+                    </div>
+                    <div class="step-card card">
+                        <img src="images/printing.svg" alt="3D printing icon." loading="lazy" width="280" height="200">
+                        <h3><span>3.</span>Precision Printing</h3>
+                        <p>We manufacture your piece with optimized print orientation for maximum strength.</p>
+                    </div>
+                    <div class="step-card card">
+                        <img src="images/quality.svg" alt="Quality check icon." loading="lazy" width="280" height="200">
+                        <h3><span>4.</span>Quality Delivery</h3>
+                        <p>Every print undergoes strict dimensional inspection before dispatch.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="cta-banner card">
+                <h2>Have a Unique Project in Mind?</h2>
+                <p>We specialize in custom CAD modeling and bespoke additive manufacturing solution.</p>
+                <a href="contact.html" class="primary-button btn light">Start Your Custom Order</a>
+            </section>            
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="site-info">
+                <p><strong>Ready 3D</strong></p>
+                <p>Maracaibo, Venezuela</p>
+                <p>info@3dready.com</p>
+                <p>(58) 261-5551234</p>
+                <a href="attributions.html">Attributions</a>
+            </div>
+            <div class="social">
+                <a href="https://github.com/RonaldDiaz/" target="_blank"><img src="images/github-logo.svg"
+                        alt="GitHub logo" width="16" height="16"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg"
+                        alt="LinkedIn logo" width="16" height="16"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.svg"
+                        alt="Instagram logo" width="16" height="16"></a>
+            </div>
+            <div class="date">
+                <p>WDD231 Class Project</p>
+                <p>Ronald Diaz Zerpa</p>
+                <p>&copy; <span id="currentYear"></span> - Ready 3D</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+                <a href="https://youtu.be/D7U2h0rZHcY" target="_blank">Video</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

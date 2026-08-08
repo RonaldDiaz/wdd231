@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready 3D | Contact Us</title>
+    <meta name="author" content="Ronald Diaz Zerpa">
+    <meta name="description"
+        content="Do you need any help deciding your model's parameters or you don't know the best material for your design? Get in contact with us, and our professional team will clarify your doubts in no time.">
+    <link rel="icon" href="images/r3d-logo.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/main.mjs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Ready 3D | Contact Us">
+    <meta property="og:description"
+        content="Do you need any help deciding your model's parameters or you don't know the best material for your design? Get in contact with us, and our professional team will clarify your doubts in no time.">
+    <meta property="og:url" content="https://ronalddiaz.github.io/wdd231/project/contact">
+    <meta property="og:image" content="https://ronalddiaz.github.io/wdd231/project/images/og-contact.webp">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+                <img class="logo" src="images/r3d-logo.svg" alt="Ready 3D logo">
+                <p class="site-name">Ready <span class="subtitle">3D</span></p>
+            </a>
+            <button type="button" class="menu-button" id="menuBtn" aria-label="Main Menu" aria-expanded="false">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="catalog.html">Catalog</a></li>
+                    <li><a class="nav-link current" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>Have a question or a custom request? Fill out the form or reach out directly.</p>
+            </div>
+            <div class="contact-container">
+                <section class="card">
+                    <h2 class="card-header">Let's Build It</h2>
+                    <div class="card-content">
+                        <p>Upload your idea or CAD model, and our engineering team will evaluate its technical feasibility.</p>                        
+                        <div class="info-block">
+                            <h3>What happens next?</h3>
+                            <ul class="process-list">
+                                <li><strong>1. Review</strong> Structural requirements analysis.</li>
+                                <li><strong>2. Quote</strong> Cost and time estimate within 24h.</li>
+                                <li><strong>3. Production</strong> Print, inspect, and ship.</li>
+                            </ul>
+                        </div>                        
+                        <div class="info-block">
+                            <h3>Technical Capabilities</h3>
+                            <ul class="materials-list">
+                                <li><strong>Technology</strong> Precision FDM Printing.</li>
+                                <li><strong>Core Materials</strong> PLA, PETG for high-durability parts.</li>
+                                <li><strong>Advanced:</strong> TPU and ABS available upon request.</li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </section>
+                
+                    <form action="action.html" method="get" class="contact-form card">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" title="Enter your full name" autocomplete="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" title="Enter a title for your request" required placeholder="Custom Order Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" title="Enter your message." required placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="primary-button btn light">Send Us a Message</button>
+                    </form>
+                
+            </div>
+                      
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="site-info">
+                <p><strong>Ready 3D</strong></p>
+                <p>Maracaibo, Venezuela</p>
+                <p>info@3dready.com</p>
+                <p>(58) 261-5551234</p>
+                <a href="attributions.html">Attributions</a>
+            </div>
+            <div class="social">
+                <a href="https://github.com/RonaldDiaz/" target="_blank"><img src="images/github-logo.svg" alt="GitHub logo"
+                        width="16" height="16"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg" alt="LinkedIn logo"
+                        width="16" height="16"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.svg" alt="Instagram logo"
+                        width="16" height="16"></a>
+            </div>
+            <div class="date">
+                <p>WDD231 Class Project</p>
+                <p>Ronald Diaz Zerpa</p>
+                <p>&copy; <span id="currentYear"></span> - Ready 3D</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+                <a href="https://youtu.be/D7U2h0rZHcY" target="_blank">Video</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

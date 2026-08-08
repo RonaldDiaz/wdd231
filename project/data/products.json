@@ -1,0 +1,122 @@
+[
+	{
+		"id": "item1",
+		"name": "Raspberry Pi 4 Enclosure",
+		"category": "enclosures",
+		"price": 15.99,
+		"description": "A durable, well-ventilated case for Raspberry Pi 4, featuring cutouts for all ports and GPIO access.",
+		"image": "raspberry-enclusure.webp"
+	},
+	{
+		"id": "item2",
+		"name": "Arduino Uno R3 Case",
+		"category": "enclosures",
+		"price": 12.50,
+		"description": "Compact Arduino Uno enclosure. Snaps together easily without the need for screws.",
+		"image": "arduino-case.webp"
+	},
+	{
+		"id": "item3",
+		"name": "ESP32 Project Box",
+		"category": "enclosures",
+		"price": 14.00,
+		"description": "Weather-resistant box for ESP32 microcontroller with a transparent lid option.",
+		"image": "esp32-box.webp"
+	},
+	{
+		"id": "item4",
+		"name": "PCB Standoff Assortment",
+		"category": "tools",
+		"price": 8.99,
+		"description": "A set of 50 precision-printed PCB standoffs in various lengths (5mm to 20mm). Do not step on it.",
+		"image": "pcb-standoff.webp"
+	},
+	{
+		"id": "item5",
+		"name": "Soldering Helping Hands Base",
+		"category": "tools",
+		"price": 22.00,
+		"description": "Heavy weighted base for flexible soldering arms. Includes an unidirectional chip that allows the user to control the arms with their mind (experimental).",
+		"image": "soldering-helping-hand.webp"
+	},
+	{
+		"id": "item6",
+		"name": "Cable Management Clips",
+		"category": "tools",
+		"price": 9.50,
+		"description": "Pack of 20 adhesive-backed or screw-mounted clips to keep your workbench wires organized and prevent strangulation.",
+		"image": "cable-clips.webp"
+	},
+	{
+		"id": "item7",
+		"name": "Concrete Casting Mold - Planter",
+		"category": "molds",
+		"price": 18.00,
+		"description": "Reusable rigid printed mold for concrete planters. Please allow the concrete to harden BEFORE removing the mold.",
+		"image": "concrete-mold.webp"
+	},
+	{
+		"id": "item8",
+		"name": "Soap Mold - Fight Club",
+		"category": "molds",
+		"price": 16.50,
+		"description": "Single-piece mold for (we don't speak about it) soaps. Printed with skin-safe PETG.",
+		"image": "soap-mold.webp"
+	},
+	{
+		"id": "item9",
+		"name": "Phone + Bluetooth Keyboard Case",
+		"category": "enclosures",
+		"price": 25.00,
+		"description": "Look like a sci-fi movie hacker with this phone case insert component for the modular cyberdeck which converts any smartphone into a clamshell palmtop.",
+		"image": "phone-case.webp"
+	},
+	{
+		"id": "item10",
+		"name": "Polymer Clay Cutters",
+		"category": "molds",
+		"price": 11.00,
+		"description": "Set of 5 diverse shape cutters for polymer clay jewelry making. You can also use it for cookies, just don't mix them!",
+		"image": "clay-cutter.webp"
+	},
+	{
+		"id": "item11",
+		"name": "Desk Organizer",
+		"category": "decor",
+		"price": 28.00,
+		"description": "A single-pieced desk organizer. Quickly discover when someone steals your pens by keeping them organized and in sight!",
+		"image": "desk-organizer.webp"
+	},
+	{
+		"id": "item12",
+		"name": "Headphone Stand",
+		"category": "decor",
+		"price": 19.99,
+		"description": "Sleek, minimalist headphone stand to keep your desk tidy and show off your gear.",
+		"image": "headphone-stand.webp"
+	},
+	{
+		"id": "item13",
+		"name": "Controller Mount",
+		"category": "decor",
+		"price": 14.50,
+		"description": "Keep your weapons loaded. Under-desk or wall mount for standard gaming controllers.",
+		"image": "controller-stand.webp"
+	},
+	{
+		"id": "item14",
+		"name": "Articulated Axolotl Toy",
+		"category": "decor",
+		"price": 35.00,
+		"description": "Meet the Skeleton Axolotl, a creepy-cute articulated axolotl designed to wiggle, pose, and move straight from the build! Do not feed it with your fingers.",
+		"image": "articulated-toy.webp"
+	},
+	{
+		"id": "item15",
+		"name": "Battery Storage Dispenser",
+		"category": "tools",
+		"price": 17.00,
+		"description": "Gravity-fed AA and AAA battery dispenser. Keeps your batteries organized and accessible. Batteries not included.",
+		"image": "battery-dispenser.webp"
+	}
+]

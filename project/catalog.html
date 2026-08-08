@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready 3D | Product Catalog</title>
+    <meta name="author" content="Ronald Diaz Zerpa">
+    <meta name="description"
+        content="From enclosures for you electronics boards to funny and decorative toys, our catalog shows you the details, price and specifications of our premium products. Save your favorites products to find them later!">
+    <link rel="icon" href="images/r3d-logo.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/catalog.mjs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <meta property="og:title" content="Ready 3D | Product Catalog">
+    <meta property="og:description"
+        content="From enclosures for you electronics boards to funny and decorative toys, our catalog shows you the details, price and specifications of our premium products. Save your favorites products to find them later!">
+    <meta property="og:url" content="https://ronalddiaz.github.io/wdd231/project/catalog">
+    <meta property="og:image" content="https://ronalddiaz.github.io/wdd231/project/images/og-catalog.webp">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-container">
+                <img class="logo" src="images/r3d-logo.svg" alt="Ready 3D logo">
+                <p class="site-name">Ready <span class="subtitle">3D</span></p>
+            </a>
+            <button type="button" class="menu-button" id="menuBtn" aria-label="Main Menu" aria-expanded="false">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link current" href="catalog.html">Catalog</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <section class="catalog-header">
+                <h1>Product Catalog</h1>
+                <div class="filters">
+                    <button class="filter-btn filter-all active" data-category="all">All</button>
+                    <button class="filter-btn filter-enclosure" data-category="enclosures">Enclosures</button>
+                    <button class="filter-btn filter-tool" data-category="tools">Tools</button>
+                    <button class="filter-btn filter-mold" data-category="molds">Molds</button>
+                    <button class="filter-btn filter-decor" data-category="decor">Decor</button>
+                </div>
+            </section>
+            <div class="catalog-container" id="catalogContainer"></div>
+        </div>
+        <dialog id="productDialog" class="product-dialog">
+            <div class="modal-content">
+                <button id="dialogClose" class="close-modal" aria-label="Close modal">&times;</button>
+                <h2 id="dialogTitle" class="modal-title">Product Name</h2>
+                <p id="dialogDesc" class="modal-body">Product description goes here.</p>
+            </div>
+        </dialog>
+        <div id="favoriteToast" class="toast-container" role="status" aria-live="polite">
+            <p id="toastMessage"></p>
+            <button type="button" id="closeToast" aria-label="Close notification">&times;</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="site-info">
+                <p><strong>Ready 3D</strong></p>
+                <p>Maracaibo, Venezuela</p>
+                <p>info@3dready.com</p>
+                <p>(58) 261-5551234</p>
+                <a href="attributions.html">Attributions</a>
+            </div>
+            <div class="social">
+                <a href="https://github.com/RonaldDiaz/" target="_blank"><img src="images/github-logo.svg" alt="GitHub logo"
+                        width="16" height="16"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin-logo.svg" alt="LinkedIn logo"
+                        width="16" height="16"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-logo.svg" alt="Instagram logo"
+                        width="16" height="16"></a>
+            </div>
+            <div class="date">
+                <p>WDD231 Class Project</p>
+                <p>Ronald Diaz Zerpa</p>
+                <p>&copy; <span id="currentYear"></span> - Ready 3D</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+                <a href="https://youtu.be/D7U2h0rZHcY" target="_blank">Video</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
