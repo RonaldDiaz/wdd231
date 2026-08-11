@@ -423,7 +423,6 @@ h1, h2 {
 
 .discover-grid {
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-areas:
     "vereda"
     "basilica"
@@ -436,43 +435,60 @@ h1, h2 {
     gap: 1.5rem;
 }
 
-.discover-card h2 { grid-area: title; }
-
-.discover-card figure { 
-    grid-area: picture;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.discover-card address { grid-area: location; }
-
-.discover-card p { grid-area: description; }
-
-.discover-card button { 
-    grid-area: action;
-    width: 100%;
-}
-
 .discover-card {
-    display: grid;
-    justify-items: center;
-    grid-template-areas: 
-    "title"
-    "picture"
-    "location"
-    "description"
-    "action";
-    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 10px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-card h2 {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.discover-card figure {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+    border-radius: 6px;
 }
 
 .discover-card figure img {
     width: 100%;
-    height: 100%;
-    max-height: 180px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    border-radius: 6px;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.discover-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.discover-card button {
+    margin-top: auto;
+    align-self: flex-start;
+    width: 100%;
+}
+
+.discover-card button:hover {
+    background-color: var(--color-primary);
 }
 
 .visit-message {
