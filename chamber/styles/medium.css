@@ -1,15 +1,36 @@
 @media (min-width: 641px) {  
     .discover-grid {
         grid-template-areas:
-            "vereda basilica"
-            "carabobo puente"
-            "baralt camlb"
-            "tranvia capitulacion";
+            "vereda"
+            "basilica"
+            "carabobo"
+            "puente"
+            "baralt"
+            "camlb"
+            "tranvia"
+            "capitulacion";
     }
 
     .discover-card figure img:hover {
         transform: translateY(-4px) scale(1.02);
         filter: brightness(1.05);
         box-shadow: 0 8px 16px var(--shadow);
+    }
+
+    .discover-card {
+        grid-template-areas:
+            "photo title"
+            "photo location"
+            "photo desc"
+            "photo btn";
+        column-gap: 1rem;
+    }
+
+    .discover-card figure {
+        height: 100%;
+    }
+
+    .discover-card figure img {
+        height: 100%;
     }
 }

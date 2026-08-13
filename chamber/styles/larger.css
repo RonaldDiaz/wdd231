@@ -71,8 +71,17 @@
 @media (min-width: 1025px) {
     .discover-grid {
         grid-template-areas:
-            "vereda basilica carabobo"
-            "puente baralt camlb"
-            "tranvia tranvia capitulacion";
+            "vereda basilica"
+            "carabobo puente"
+            "baralt camlb"
+            "tranvia capitulacion";
+    }
+
+    .discover-card {
+        grid-template-areas:
+            "title title"
+            "photo location"
+            "photo desc"
+            "photo btn";
     }
 }
